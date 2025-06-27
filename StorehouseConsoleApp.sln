@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorehouseConsoleApp", "StorehouseConsoleApp\StorehouseConsoleApp.csproj", "{95854927-55AD-450F-B790-EEF105AA9002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorehouseConsoleAppTests", "StorehouseConsoleAppTests\StorehouseConsoleAppTests.csproj", "{C262F8C9-FFA1-434D-8D3F-367A33386D01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95854927-55AD-450F-B790-EEF105AA9002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95854927-55AD-450F-B790-EEF105AA9002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95854927-55AD-450F-B790-EEF105AA9002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95854927-55AD-450F-B790-EEF105AA9002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C262F8C9-FFA1-434D-8D3F-367A33386D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C262F8C9-FFA1-434D-8D3F-367A33386D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C262F8C9-FFA1-434D-8D3F-367A33386D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C262F8C9-FFA1-434D-8D3F-367A33386D01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

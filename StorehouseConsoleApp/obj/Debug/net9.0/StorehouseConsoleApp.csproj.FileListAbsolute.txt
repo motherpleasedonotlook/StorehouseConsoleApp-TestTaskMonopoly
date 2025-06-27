@@ -1,0 +1,14 @@
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\bin\Debug\net9.0\StorehouseConsoleApp.exe
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\bin\Debug\net9.0\StorehouseConsoleApp.deps.json
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\bin\Debug\net9.0\StorehouseConsoleApp.runtimeconfig.json
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\bin\Debug\net9.0\StorehouseConsoleApp.dll
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\bin\Debug\net9.0\StorehouseConsoleApp.pdb
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.AssemblyInfoInputs.cache
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.AssemblyInfo.cs
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.dll
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\refint\StorehouseConsoleApp.dll
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.pdb
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.genruntimeconfig.cache
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\ref\StorehouseConsoleApp.dll
