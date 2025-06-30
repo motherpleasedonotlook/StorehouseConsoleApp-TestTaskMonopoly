@@ -3,7 +3,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=95854927_002D55AD_002D450F_002DB790_002DEEF105AA9002/@EntryIndexedValue">StorehouseConsoleApp.Tests</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=MSTest/@EntryIndexedValue">d6790ab7-33c2-4425-b2c9-51480cd1a852</s:String>
 	<s:Boolean x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/ShowAdvancedOptions/@EntryValue">True</s:Boolean>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=afae3dd3_002D91e7_002D4dd7_002D93a4_002De80c0976323c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TopThreeLongestLifePallets_ValidPallets_ReturnsCorrectPallets" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=afae3dd3_002D91e7_002D4dd7_002D93a4_002De80c0976323c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TopThreeLongestLifePallets_ValidPallets_ReturnsCorrectPallets" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::C262F8C9-FFA1-434D-8D3F-367A33386D01::net9.0::StorehouseConsoleAppTests.HandleDataServiceTests.TopThreeLongestLifePallets_ValidPallets_ReturnsCorrectPallets&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::C262F8C9-FFA1-434D-8D3F-367A33386D01::net9.0::StorehouseConsoleAppTests.PalletTests&lt;/TestId&gt;&#xD;
@@ -20,8 +20,11 @@
     &lt;TestId&gt;NUnit3x::C262F8C9-FFA1-434D-8D3F-367A33386D01::net9.0::StorehouseConsoleAppTests.HandleDataServiceTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ca43158a_002Dd375_002D4687_002D9433_002D46dfd0cb4ce0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="MainFuncTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ca43158a_002Dd375_002D4687_002D9433_002D46dfd0cb4ce0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="MainFuncTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::C262F8C9-FFA1-434D-8D3F-367A33386D01::net9.0::StorehouseConsoleAppTests.MainFuncTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C262F8C9-FFA1-434D-8D3F-367A33386D01::net9.0::StorehouseConsoleAppTests.PalletOperationsTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C262F8C9-FFA1-434D-8D3F-367A33386D01::net9.0::StorehouseConsoleAppTests.PalletCreatingTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C262F8C9-FFA1-434D-8D3F-367A33386D01::net9.0::StorehouseConsoleAppTests.BoxCreatingTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C262F8C9-FFA1-434D-8D3F-367A33386D01::net9.0::StorehouseConsoleAppTests.HandleDataServiceTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

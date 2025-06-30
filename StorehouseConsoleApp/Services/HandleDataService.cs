@@ -20,6 +20,9 @@ public static class HandleDataService
         
         var palletsWithBoxes = pallets.Where(p => p.Boxes?.Count > 0).ToList();
         
+        if (palletsWithBoxes.Count == 0)
+            throw new ArgumentException("Передан список пустых паллет");
+        
         return palletsWithBoxes
             .GroupBy(p => p.ExpirationDate)
             .OrderBy(g => g.Key) 
@@ -29,17 +32,21 @@ public static class HandleDataService
     }
 
     /// <summary>
-    /// Возвращает 3 паллеты с наибольшим сроком годности, отсортированные по возрастанию объема
+    /// Сортирует паллеты по максимальному сроку годности коробок внутри них (от меньшего к большему), находит максимальную дату истечения срока среди всех коробок на паллете
+    /// и возвращает первые 3 паллеты из отсортированного списка.
     /// </summary>
     /// <param name="pallets">Список паллет для обработки</param>
-    /// <returns>Список из 3 паллет с наибольшим сроком годности</returns>
-    /// <exception cref="ArgumentException">Выбрасывается, если передан пустой список</exception>
-    public static List<Pallet> TopThreeLongestLifePallets(List<Pallet> pallets)
+    /// <returns>Список из 3 паллет с коробками наибольшего срока годности</returns>
+    /// <exception cref="ArgumentException">Выбрасывается, если передан пустой список или список, состоящий из пустых паллет</exception>
+    public static List<Pallet> TopThreeLongestLifeBoxPallets(List<Pallet> pallets)
     {
         if (pallets.Count == 0)
             throw new ArgumentException("Список пуст");
         
         var palletsWithBoxes = pallets.Where(p => p.Boxes?.Count > 0).ToList();
+        
+        if (palletsWithBoxes.Count == 0)
+            throw new ArgumentException("Передан список пустых паллет");
         
         return palletsWithBoxes
             .OrderByDescending(p => p.Boxes.Max(b => b.ExpirationDate))

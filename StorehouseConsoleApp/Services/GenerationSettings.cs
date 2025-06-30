@@ -34,17 +34,17 @@ public class GenerationSettings
     /// <summary>
     /// Размеры паллеты (по умолчанию Width: 120, Height: 20, Depth: 80)
     /// </summary>
-    public Dimensions Pallet { get; set; } = new();
+    public Dimensions PalletDimensions { get; set; } = new();
     
     /// <summary>
     /// Максимальные размеры коробок (по умолчанию Width: 120, Height: 20, Depth: 80)
     /// </summary>
-    public Dimensions MaxBox { get; set; } = new();
+    public Dimensions MaxBoxDimensions { get; set; } = new();
     
     /// <summary>
-    /// Минимальные размеры коробок (автоматически устанавливаются как 1/3 от MaxBox при создании)
+    /// Минимальные размеры коробок (автоматически устанавливаются как 1/3 от MaxBoxDimensions при создании, если не переопределять)
     /// </summary>
-    public Dimensions MinBox { get; set; }
+    public Dimensions MinBoxDimensions { get; set; }
     
     /// <summary>
     /// Минимальный вес коробки в кг (по умолчанию 0.1)
@@ -72,11 +72,11 @@ public class GenerationSettings
     public GenerationSettings()
     {
         // Минимум 1/3 от максимального размера
-        MinBox = new Dimensions
+        MinBoxDimensions = new Dimensions
         {
-            Width = Math.Max(1, MaxBox.Width / 3),
-            Height = Math.Max(1, MaxBox.Height / 3),
-            Depth = Math.Max(1, MaxBox.Depth / 3)
+            Width = Math.Max(1, MaxBoxDimensions.Width / 3),
+            Height = Math.Max(1, MaxBoxDimensions.Height / 3),
+            Depth = Math.Max(1, MaxBoxDimensions.Depth / 3)
         };
     }
 }

@@ -49,9 +49,9 @@ public class DataGenerationService(GenerationSettings settings)
     {
         var pallet = new Pallet(
             id,
-            settings.Pallet.Width,
-            settings.Pallet.Height,
-            settings.Pallet.Depth
+            settings.PalletDimensions.Width,
+            settings.PalletDimensions.Height,
+            settings.PalletDimensions.Depth
         );
         if (settings.MaxBoxesPerPallet == 0)
             return pallet;
@@ -85,9 +85,9 @@ public class DataGenerationService(GenerationSettings settings)
         
         return new Box(
             id,
-            GetRandomDouble(settings.MinBox.Width, settings.MaxBox.Width),
-            GetRandomDouble(settings.MinBox.Height, settings.MaxBox.Height),
-            GetRandomDouble(settings.MinBox.Depth, settings.MaxBox.Depth),
+            GetRandomDouble(settings.MinBoxDimensions.Width, settings.MaxBoxDimensions.Width),
+            GetRandomDouble(settings.MinBoxDimensions.Height, settings.MaxBoxDimensions.Height),
+            GetRandomDouble(settings.MinBoxDimensions.Depth, settings.MaxBoxDimensions.Depth),
             GetRandomDouble(settings.MinBoxWeight, settings.MaxBoxWeight),
             DateOnly.FromDateTime(productionDate),
             expirationDate: null

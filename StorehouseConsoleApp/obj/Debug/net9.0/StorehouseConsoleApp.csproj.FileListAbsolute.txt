@@ -12,3 +12,4 @@ C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug
 C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.pdb
 C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.genruntimeconfig.cache
 C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\ref\StorehouseConsoleApp.dll
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleApp\obj\Debug\net9.0\StorehouseConsoleApp.sourcelink.json

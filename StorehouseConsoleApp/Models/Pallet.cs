@@ -79,13 +79,22 @@ public class Pallet
     /// Добавляет коробку на паллету.
     /// </summary>
     /// <param name="box">Коробка для добавления.</param>
-    /// <exception cref="InvalidOperationException">Выбрасывается, если коробка по площади дна не помещается.</exception>
+    /// <exception cref="InvalidOperationException">Выбрасывается, если коробка ни в одной ориентации не помещается на паллету.</exception>
     public void AddBox(Box box)
     {
         Boxes ??= [];
-        if (box.Width > Width || box.Depth > Depth)
-            throw new InvalidOperationException("Коробка не помещается на эту паллету");
-            
+    
+        var fits =
+            // Ставим на дно (по обычному)
+            (box.Width <= Width && box.Depth <= Depth) ||
+            // Переворачиваем на бок
+            (box.Width <= Width && box.Height <= Depth) ||
+            // Ставим торцем
+            (box.Height <= Width && box.Depth <= Depth);
+    
+        if (!fits)
+            throw new InvalidOperationException("Коробка не помещается на эту паллету.");
+        
         Boxes.Add(box);
     }
 }

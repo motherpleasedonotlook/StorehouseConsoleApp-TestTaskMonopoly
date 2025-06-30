@@ -9,31 +9,32 @@ try
     var settings = new GenerationSettings
     {
         MaxBoxesPerPallet = 3,
-        Pallet = new GenerationSettings.Dimensions
+        PalletDimensions = new GenerationSettings.Dimensions
         {
             Width = 101.6,
             Height = 20,
             Depth = 121.9
         },
-        MinBox = new GenerationSettings.Dimensions
+        MinBoxDimensions = new GenerationSettings.Dimensions
         {
             Width = 30,
             Height = 20,
             Depth = 30,
         },
-        MaxBox = new GenerationSettings.Dimensions
+        MaxBoxDimensions = new GenerationSettings.Dimensions
         {
             Width =100,
             Height = 10,
             Depth = 120,
-        }
+        },
+        MinProductionDateDaysOffset = -15
     };
     
     // Создаём генератор с этими настройками
     var generator = new DataGenerationService(settings); 
     
     // Генерируем паллеты
-    var pallets = generator.GetPallets(20);
+    var pallets = generator.GetPallets(15);
 
     // Выводим результаты генерации
     Console.WriteLine("======= Результат генерации тестовых значений =======");
@@ -43,13 +44,27 @@ try
     Console.WriteLine("#1 Сгруппировать паллеты по сроку годности, отсортировать по" +
                       " возрастанию срока годности, в группе отсортировать паллеты по весу внутри группы\n" +
                       "(Пустые паллеты будут проигнорированны, т.к. у них нет срока годности.)");
-    HandleDataService.DisplayPalletList(HandleDataService.SortByExpirationDateLessWeightFirst(pallets));
-    
+    try
+    {
+        HandleDataService.DisplayPalletList(HandleDataService.SortByExpirationDateLessWeightFirst(pallets));
+    }
+    catch (ArgumentException exception)
+    {
+        Console.WriteLine(exception.Message);
+    }
+
     //Три паллеты с наибольшим сроком годности, паллеты по возрастанию объема
     Console.WriteLine("#2 Три паллеты, отсортированные по возрастанию объема, которые содержат коробки " +
                       "с наибольшим сроком годности");
-    HandleDataService.DisplayPalletList(HandleDataService.TopThreeLongestLifePallets(pallets));
-    
+    try
+    {
+        HandleDataService.DisplayPalletList(HandleDataService.TopThreeLongestLifeBoxPallets(pallets));
+    }
+    catch(ArgumentException exception)
+    {
+        Console.WriteLine(exception.Message);
+    }
+
 }
 catch (Exception exception)
 {

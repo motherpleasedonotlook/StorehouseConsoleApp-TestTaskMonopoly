@@ -161,3 +161,4 @@ C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleAppTests\obj\
 C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleAppTests\obj\Debug\net9.0\StorehouseConsoleAppTests.pdb
 C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleAppTests\obj\Debug\net9.0\StorehouseConsoleAppTests.genruntimeconfig.cache
 C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleAppTests\obj\Debug\net9.0\ref\StorehouseConsoleAppTests.dll
+C:\Users\iness\RiderProjects\StorehouseConsoleApp\StorehouseConsoleAppTests\obj\Debug\net9.0\StorehouseConsoleAppTests.sourcelink.json
