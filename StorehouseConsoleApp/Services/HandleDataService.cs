@@ -9,9 +9,10 @@ public static class HandleDataService
 {
     /// <summary>
     /// Группирует все паллеты по сроку годности, сортирует группы по возрастанию срока годности, в каждой группе сортирует паллеты по весу.
+    /// Если вес одинаковый, сортирует по id паллеты
     /// </summary>
     /// <param name="pallets">Список паллет для сортировки</param>
-    /// <returns>Отсортированный список паллет</returns>
+    /// <returns>Отсортированный список паллет по сроку годности и весу</returns>
     /// <exception cref="ArgumentException">Выбрасывается, если передан пустой список</exception>
     public static List<Pallet> SortByExpirationDateLessWeightFirst(List<Pallet> pallets)
     {
@@ -27,13 +28,14 @@ public static class HandleDataService
             .GroupBy(p => p.ExpirationDate)
             .OrderBy(g => g.Key) 
             .SelectMany(g => g
-                .OrderBy(p => p.Weight))
+                .OrderBy(p => p.Weight)
+                .ThenBy(p => p.Id))
             .ToList();
     }
 
     /// <summary>
     /// Сортирует паллеты по максимальному сроку годности коробок внутри них (от меньшего к большему), находит максимальную дату истечения срока среди всех коробок на паллете
-    /// и возвращает первые 3 паллеты из отсортированного списка.
+    /// и возвращает первые 3 паллеты из итогового списка, отсортированные по объему. Если объем одинаковый - сортирует по id паллеты.
     /// </summary>
     /// <param name="pallets">Список паллет для обработки</param>
     /// <returns>Список из 3 паллет с коробками наибольшего срока годности</returns>
@@ -52,6 +54,7 @@ public static class HandleDataService
             .OrderByDescending(p => p.Boxes.Max(b => b.ExpirationDate))
             .Take(3)
             .OrderBy(p => p.Volume)
+            .ThenBy(p => p.Id)
             .ToList();
     }
 
